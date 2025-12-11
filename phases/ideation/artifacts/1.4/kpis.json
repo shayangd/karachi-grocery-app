@@ -1,0 +1,31 @@
+{
+  "recipe_id": "1.4",
+  "verdict": "GO",
+  "verdict_rationale": "The 'Check Availability & Prices' step represents an exceptional decoupling opportunity with a +7 gap score (pain 9/10, incumbent performance 2/10). All three feasibility dimensions are HIGH (technical, economic, behavioral), validated by 100% of interviews mentioning this pain and 83% building workarounds. The 8.65/10 opportunity score significantly exceeds the 7.0 threshold, and 5 independent evidence sources provide high confidence. Structural barriers (revenue cannibalization, architecture mismatch, brand conflicts) give MVD an 18-24 month competitive window.",
+  "kpis": {
+    "decoupling_opportunity_score": {
+      "name": "Decoupling Opportunity Score",
+      "value": 8.65,
+      "threshold": "7.0",
+      "passed": true,
+      "weight": 0.70,
+      "unit": "/10",
+      "evidence": "Pain Intensity=9/10 (100% interviews mentioned inventory unpredictability), Incumbent Weakness=8/10 (performance 2/10, no real-time visibility exists), Standalone Viability=9/10 (Technical HIGH: clean interfaces, Economic HIGH: Rs.2-5k/month customer cost, Behavioral HIGH: 83% workarounds). Formula: (9×0.40) + (8×0.35) + (9×0.25) = 3.6 + 2.8 + 2.25 = 8.65/10"
+    },
+    "market_evidence_strength": {
+      "name": "Market Evidence Strength",
+      "value": 5,
+      "threshold": "3",
+      "passed": true,
+      "weight": 0.30,
+      "unit": " sources",
+      "evidence": "5 independent sources: (1) Interview quotes - 12/12 interviews mentioned pain at this step, (2) Workarounds - 83% built active solutions (WhatsApp groups, calling stores, spreadsheets), (3) Competitor attempts - Daraz/Panda tried but failed (58% report cancellations), Krave shut down, (4) Public complaints - Universal across all customer segments, (5) Market data - Rs.84B/year TAM (2M households × Rs.3,500/month pain cost)"
+    }
+  },
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": 100.0
+  }
+}
