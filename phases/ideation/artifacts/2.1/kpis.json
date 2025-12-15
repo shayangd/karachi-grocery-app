@@ -1,0 +1,120 @@
+{
+  "recipe_id": "2.1",
+  "generated_at": "2025-12-17T00:00:00Z",
+  "verdict": "CONDITIONAL",
+  "verdict_rationale": "Market exists with strong fundamentals (healthy unit economics 6.4x LTV/CAC, growing 17.5% CAGR, $550M SAM), but TAM below venture-scale threshold ($650M vs $1B) and path to $100M ARR requires unrealistic 44% market share at current ARPU assumptions. Conservative ARPU estimates ($64/year, 57% below benchmark) may be undervaluing market potential.",
+  "kpis": [
+    {
+      "id": "tam_size",
+      "name": "TAM Size",
+      "score": 65,
+      "passed": false,
+      "threshold": {
+        "pass": 1000,
+        "conditional": 500,
+        "fail": 0
+      },
+      "weight": 0.143,
+      "evidence": "Pakistan online grocery TAM $650M (2024) from 8 sources. Calculated as Pakistan e-commerce $3.9B × 17.5% grocery share. Sources: Tribune India ($5.0B), Accio ($2.8B), Research and Markets (global $264.94B), Mordor Intelligence (APAC $289.24B). Variance 56.4% due to social commerce inclusion/exclusion.",
+      "unit": "$M",
+      "score_raw": "$650M"
+    },
+    {
+      "id": "sam_size",
+      "name": "SAM Size",
+      "score": 90,
+      "passed": true,
+      "threshold": {
+        "pass": 100,
+        "conditional": 50,
+        "fail": 0
+      },
+      "weight": 0.143,
+      "evidence": "Karachi grocery delivery SAM $550M validated via 3 methods: (1) Top-down filtering $156M conservative, (2) Bottom-up competitor sum $425-775M, (3) Bottom-up ICP spend $225M. Competitor revenues $85-155M imply 15-25% current penetration. 2M ICP households × 75% reachability × 15-25% adoption.",
+      "unit": "$M",
+      "score_raw": "$550M"
+    },
+    {
+      "id": "path_to_100m",
+      "name": "Path to $100M ARR",
+      "score": 25,
+      "passed": false,
+      "threshold": {
+        "achievable": 10,
+        "challenging": 25,
+        "unlikely": 100
+      },
+      "weight": 0.143,
+      "evidence": "Requires 666,667 customers at $150 ARPU (Pakistan q-commerce benchmark) = 44.4% of 1.5M reachable households. Current market leader (Foodpanda) has 35-40% share. At venture's conservative $64 ARPU, would need 1.56M customers (104% of market). Path becomes CHALLENGING (11% share) with Pakistan national expansion or ACHIEVABLE (6% share) with regional expansion.",
+      "unit": "% market share",
+      "score_raw": "44.4%"
+    },
+    {
+      "id": "unit_economics",
+      "name": "Unit Economics (LTV/CAC)",
+      "score": 85,
+      "passed": true,
+      "threshold": {
+        "healthy": 3.0,
+        "constrained": 2.0,
+        "broken": 0
+      },
+      "weight": 0.143,
+      "evidence": "LTV $128 (ARPU $64/year × 24-month lifetime) ÷ CAC $20 (conservative estimate) = 6.4x ratio. CAC payback 3.75 months ($20 ÷ $5.33 monthly ARPU). ICP research shows blended CAC $1.60 (PKR 450), but adjusted to $20 for realistic scale economics. Significantly better than regional competitors (Daraz unprofitable, Delivery Hero 0.4% FCF margin).",
+      "unit": "ratio",
+      "score_raw": "6.4"
+    },
+    {
+      "id": "market_growth",
+      "name": "Market Growth Rate (CAGR)",
+      "score": 88,
+      "passed": true,
+      "threshold": {
+        "growing": 10,
+        "stable": 0,
+        "declining": -100
+      },
+      "weight": 0.143,
+      "evidence": "Pakistan e-commerce growing 17.5-35% CAGR (2024-2030). Conservative estimate 17.5% CAGR for online grocery. Drivers: internet penetration 45.7%→60%+, smartphone adoption 57%→75%+, digital payments 89% of transactions (400% growth since 2020), 78% trust online platforms (vs 31% in 2021). Asia-Pacific online grocery 13.55% CAGR, Global 15.36% CAGR.",
+      "unit": "%",
+      "score_raw": "17.5%"
+    },
+    {
+      "id": "data_quality",
+      "name": "Data Source Quality",
+      "score": 60,
+      "passed": true,
+      "threshold": {
+        "high": 3,
+        "moderate": 2,
+        "low": 1
+      },
+      "weight": 0.143,
+      "evidence": "8 independent sources across 3 tiers: Tier 1 (Research and Markets, Mordor Intelligence), Tier 2 (Agriculture Canada, Express Tribune, Tribune India), Tier 3 (Accio, BlueEx Prospectus, Inc42). TAM variance 56.4% (>30% threshold) due to social commerce inclusion/exclusion. No Pakistan-specific online grocery reports from Gartner/Forrester/IDC. SAM triangulated via 3 methods with <40% variance.",
+      "unit": "sources",
+      "score_raw": "8 sources, 56.4% variance"
+    },
+    {
+      "id": "benchmark_alignment",
+      "name": "Benchmark Alignment",
+      "score": 40,
+      "passed": true,
+      "threshold": {
+        "aligned": 30,
+        "optimistic": -30,
+        "conservative": -100
+      },
+      "weight": 0.143,
+      "evidence": "Venture ARPU $64/year (PKR 18,000) vs Pakistan q-commerce benchmark $150/year = -57.3% variance. Conservative assumptions driven by: (1) mass-market vs premium positioning, (2) delivery fees only vs basket value, (3) 40% subscription adoption may be optimistic. Competitors: Daraz $18, Careem $56, Krave Mart $200-400. India comparables: Zepto $151-227, Blinkit $380-455.",
+      "unit": "% variance",
+      "score_raw": "-57.3%"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 4,
+    "failed": 3,
+    "pass_rate": 57.14,
+    "weighted_score": 64.43
+  }
+}
