@@ -4,11 +4,11 @@
 
 ## Idea Statement
 
-Karachi citizens struggle with inconsistent grocery availability, rising prices, traffic congestion, and unpredictable store timings, making basic grocery shopping exhausting and time-consuming. This problem primarily affects working families, students, and professionals who need to shop frequently (3-5 times per week) but face traffic bottlenecks, delivery delays, and out-of-stock frustrations. During peak hours and bad weather, grocery shopping becomes stressful and unreliable, directly impacting daily life for millions of Karachiites who depend on consistent access to essentials.
+Karachi citizens struggle with inconsistent grocery availability, rising prices, traffic congestion, and unpredictable store timings. Working professionals, university students, housewives, and small families find that buying basic groceries becomes exhausting and time-consuming during peak hours or bad traffic. Many neighborhoods face delivery delays due to traffic bottlenecks, road blocks, and rain-related issues, making grocery shopping stressful and unreliable for people who shop 3-5 times per week.
 
 ## Solution Statement
 
-A hyperlocal, real-time grocery availability app that shows live inventory from neighborhood kiryana stores, minimarts, and vendors with traffic-aware delivery routing for 30-45 minute delivery. Unlike existing competitors (Daraz Mart, PandaMart), the app provides real-time neighborhood store inventory visibility AND dynamic delivery estimates based on actual Karachi traffic conditions, avoiding jammed and rain-affected roads. This unique combination of live inventory tracking and intelligent routing allows customers to see what's available nearby and get reliable delivery times despite the city's challenging traffic conditions.
+A hyperlocal, real-time grocery availability app for Karachi that shows which nearby stores currently have essential items in stock with dynamic delivery time estimates based on traffic conditions. The app partners with neighborhood kiryana stores, minimarts, and fruit/vegetable vendors, allowing users to see live inventory, compare prices, and get fast delivery within 30-45 minutes. It features traffic-aware delivery routing that avoids jammed areas and rain-affected roads, differentiating it from existing competitors who don't offer real-time neighborhood store inventory or traffic-aware delivery.
 
 
 ---
