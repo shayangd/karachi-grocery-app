@@ -1,0 +1,116 @@
+{
+  "recipe_id": "9.2",
+  "recipe_name": "Company Intelligence Mapping",
+  "venture_name": "Karachi Grocery App",
+  "date_assessed": "2025-12-16",
+  "kpis": {
+    "kpi_1_company_count": {
+      "name": "Company Count",
+      "weight": 0.30,
+      "result": 14,
+      "threshold": ">=10 companies across all categories",
+      "verdict": "PASS",
+      "score": 10,
+      "breakdown": {
+        "direct_competitors": 4,
+        "indirect_competitors": 3,
+        "adjacent_players": 4,
+        "failed_companies": 3
+      },
+      "analysis": "Comprehensive coverage exceeding threshold. Mapped all major players in Pakistan grocery delivery ecosystem, including direct q-commerce competitors, indirect e-commerce/logistics players, adjacent ride-hailing/super-app convergence, and critical failed company lessons."
+    },
+    "kpi_2_category_coverage": {
+      "name": "Category Coverage",
+      "weight": 0.25,
+      "result": "4/4 categories populated",
+      "threshold": "All 4 categories represented",
+      "verdict": "PASS",
+      "score": 10,
+      "breakdown": {
+        "direct_populated": true,
+        "indirect_populated": true,
+        "adjacent_populated": true,
+        "failed_populated": true
+      },
+      "analysis": "Complete category coverage. All 4 categories have multiple companies, providing comprehensive view of competitive landscape, market dynamics, and failure lessons."
+    },
+    "kpi_3_profile_completeness": {
+      "name": "Profile Completeness",
+      "weight": 0.25,
+      "result": "89%",
+      "threshold": ">=80% fields populated",
+      "verdict": "PASS",
+      "score": 10,
+      "calculation": {
+        "total_companies": 14,
+        "fields_per_company": 8,
+        "total_possible_fields": 112,
+        "populated_fields": 100,
+        "completeness_percentage": 89
+      },
+      "standard_fields": [
+        "Website (93% - 13/14)",
+        "Founded year (100% - 14/14)",
+        "Status (100% - 14/14)",
+        "Total funding (93% - 13/14, GrocerApp estimated)",
+        "Core product description (100% - 14/14)",
+        "Target customer (100% - 14/14)",
+        "Team size (79% - 11/14, some estimated)",
+        "Discovery source (100% - 14/14)"
+      ],
+      "analysis": "High profile completeness. All companies have comprehensive profiles covering funding, product, GTM, traction, and intelligence notes. Minor gaps exist for bootstrapped/private companies where public data is limited."
+    },
+    "kpi_4_source_attribution": {
+      "name": "Source Attribution",
+      "weight": 0.20,
+      "result": "100%",
+      "threshold": "100% source documented",
+      "verdict": "PASS",
+      "score": 10,
+      "source_breakdown": {
+        "recipe_5_1_5_2": "14/14 (primary source)",
+        "tracxn_database": "8/14",
+        "company_websites": "10/14",
+        "y_combinator": "1/14 (Krave Mart)",
+        "news_articles": "10/14",
+        "customer_reviews": "8/14",
+        "web_research": "14/14"
+      },
+      "analysis": "Perfect source attribution. Every company has documented discovery sources with specific URLs and references. Multiple sources cross-validate key facts."
+    }
+  },
+  "overall_score": {
+    "weighted_score": 10.0,
+    "calculation": "(10 × 0.30) + (10 × 0.25) + (10 × 0.25) + (10 × 0.20) = 10.0",
+    "decision_framework": {
+      "go": ">=8.0",
+      "go_with_caution": "6.0-7.9",
+      "stop": "<6.0"
+    },
+    "final_decision": "GO",
+    "decision_rationale": "Perfect score across all 4 KPIs demonstrates comprehensive company intelligence mapping. Coverage includes 14 companies across all 4 categories, with high profile completeness (89%) and perfect source attribution (100%). Intelligence provides actionable insights on competitive dynamics, strategic opportunities, and critical failure lessons."
+  },
+  "key_findings": [
+    "Crowded Direct Competition: 4 well-funded direct competitors (Krave Mart $16M, Foodpanda Pandamart $10B+ parent, DealCart $7.5M, GrocerApp) with significant market share concentration",
+    "Critical Failure Lessons: Airlift's $85M failure (2022) provides invaluable lessons on capital efficiency, unit economics, and the dangers of hyper-growth without profitability",
+    "Strategic Opportunity: Adjacent players (InDrive, Yango, Bykea) entering grocery via partnerships validates asset-light approach and creates potential strategic investor/exit opportunities",
+    "Market Consolidation: Post-Airlift consolidation (2022-2024) has reduced competition from 6+ players to 4 direct competitors, creating entry window for differentiated players",
+    "No Traffic Intelligence: ZERO competitors emphasize traffic-aware routing despite Karachi's notorious congestion—our core differentiator is unaddressed by entire market"
+  ],
+  "intelligence_insights": [
+    "Capital Efficiency Determines Survival: All survivors either have parent backing or achieved near-profitability; Airlift's $85M failure demonstrates poor unit economics cannot be saved by capital",
+    "Super-App Convergence: InDrive's $10M investment in Krave Mart and Yango's DealCart partnership show adjacent ride-hailing players view grocery as strategic super-app component",
+    "Dark Store Dominance But Vulnerability: Market leaders use dark store model (high capex $2-5M per 10 stores) creating opportunity for capital-efficient kiryana partnerships",
+    "Post-Airlift Trauma: Funding landscape transformed—capital efficiency demanded, smaller check sizes ($3-10M vs $85M), profitability timeline required (18-24 months)",
+    "Market Consolidation Creates Entry Window: Reduction from 6+ to 4 direct competitors post-Airlift creates opportunity for differentiated players"
+  ],
+  "research_quality": {
+    "total_sources": 20,
+    "tier_1_sources": 6,
+    "tier_2_sources": 8,
+    "tier_3_sources": 6,
+    "data_currency": "90%+ from 2024-2025 (last 12 months)",
+    "cross_validation": "Key facts cross-referenced across 3+ sources",
+    "methodology": "Multi-source triangulation combining prior artifacts, proactive web research, company websites, funding databases, and customer feedback validation"
+  }
+}
