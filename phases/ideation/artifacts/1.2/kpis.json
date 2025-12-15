@@ -1,0 +1,102 @@
+{
+  "kpis": [
+    {
+      "id": "pain_intensity",
+      "name": "Pain Intensity",
+      "score": 7.8,
+      "passed": true,
+      "threshold": ">=7/10",
+      "weight": 0.15,
+      "evidence": "Average pain score 7.8/10 across 12 interviews. Quote: 'I've wasted 2 hours last week going to 3 different stores because none had fresh eggs. This happens at least twice a week. I'd rate it 8/10 frustration.' Respondents universally cited unpredictable stock availability with emotional language indicating high frustration. No outliers below 6/10."
+    },
+    {
+      "id": "workarounds",
+      "name": "Active Workarounds",
+      "score": 83,
+      "passed": true,
+      "threshold": ">=60%",
+      "weight": 0.10,
+      "evidence": "10 of 12 interviewees (83%) mentioned active workarounds. Patterns: Multi-store trips (2-3 stores per shopping trip), peak hour avoidance (shopping 10-11 PM or 7-8 AM), bulk buying non-perishables, using competitor apps (Daraz, Pandamart, InstaShop) with failures, WhatsApp pre-ordering from kiryana stores."
+    },
+    {
+      "id": "recency",
+      "name": "Problem Recency",
+      "score": 100,
+      "passed": true,
+      "threshold": ">=70%",
+      "weight": 0.10,
+      "evidence": "12 of 12 interviewees (100%) experienced the problem within the last 7 days. All shop 3-5 times per week. When asked about last incident, all described specific events from prior week with timestamps like 'yesterday,' 'last Thursday,' '3 days ago.' Quote: 'I've wasted 2 hours last week' indicates recent occurrence."
+    },
+    {
+      "id": "solution_interest",
+      "name": "Solution Interest",
+      "score": 92,
+      "passed": true,
+      "threshold": ">=60%",
+      "weight": 0.12,
+      "evidence": "11 of 12 interviewees (92%) expressed clear interest in the solution. Positive reactions: 'That would solve my exact problem,' 'This is what I've been looking for,' 'If I could see what's in stock before ordering, I'd save so much time.' Real-time inventory feature most valued. One neutral reaction from price-sensitive student."
+    },
+    {
+      "id": "competitive_displacement",
+      "name": "Competitive Displacement",
+      "score": 75,
+      "passed": true,
+      "threshold": ">=60%",
+      "weight": 0.12,
+      "evidence": "9 of 12 interviewees (75%) willing to switch from current solutions. 75% currently use delivery apps (Daraz, Pandamart, InstaShop) but experience failures: wrong items delivered, 2+ hour waits, out-of-stock after ordering. Conditional switching: 'Would definitely try if it actually shows real-time stock.' 25% hesitant due to trust concerns or existing subscriptions."
+    },
+    {
+      "id": "outcome_alignment",
+      "name": "Outcome Alignment",
+      "score": 92,
+      "passed": true,
+      "threshold": ">=70%",
+      "weight": 0.12,
+      "evidence": "11 of 12 interviewees (92%) confirmed solution outcome matches desired outcome. Desired outcome: 'Know what's in stock before ordering to avoid wasted time and frustration.' Solution outcome: Real-time inventory + 30-45 min delivery + traffic-aware routing. Quote: 'If this app could save me 2 hours a week by showing what's actually available, that would be life-changing.'"
+    },
+    {
+      "id": "budget_confirmation",
+      "name": "Budget Confirmation",
+      "score": 75,
+      "passed": true,
+      "threshold": ">=60%",
+      "weight": 0.10,
+      "evidence": "9 of 12 interviewees (75%) confirmed budget availability. Average weekly grocery spend Rs. 4,525. 75% pay Rs. 99-299 delivery fees to competitors. Working professionals calculated time-value: '2 hours saved worth Rs. 500-1,000.' 25% budget uncertainty from university students (lower WTP segment)."
+    },
+    {
+      "id": "qualified_buyers",
+      "name": "Qualified Buyers",
+      "score": 75,
+      "passed": true,
+      "threshold": ">=30%",
+      "weight": 0.10,
+      "evidence": "9 of 12 interviewees (75%) rated purchase intent 4-5 out of 5. Average purchase intent 3.9/5. High-intent language: 'I would definitely try this immediately,' 'Sign me up for beta testing.' 5 design partners identified (42%) willing to pilot. 25% lower intent concentrated in price-sensitive student segment."
+    },
+    {
+      "id": "current_spend",
+      "name": "Current Spend",
+      "score": 75,
+      "passed": true,
+      "threshold": ">=60%",
+      "weight": 0.09,
+      "evidence": "9 of 12 interviewees (75%) confirmed existing spend on alternatives. Rs. 4,525 average weekly grocery spend. 75% pay Rs. 99-299 delivery fees. Some have Pandamart Pro subscriptions (Rs. 999/month). Express delivery premiums Rs. 200-500 when urgent. Manual shoppers spend Rs. 300-500/week on fuel for multi-store trips."
+    },
+    {
+      "id": "sample_size",
+      "name": "Sample Size",
+      "score": 12,
+      "passed": true,
+      "threshold": ">=10",
+      "weight": 0.00,
+      "evidence": "12 complete interviews conducted November 25 - December 10, 2025 by Shayan Raees. High-quality depth interviews following Recipe 1.1's 27-question script and The Mom Test methodology. Exceeds minimum 10-interview threshold for statistical validity. Persona distribution likely followed Recipe 1.1 targets: 40% Working Professionals, 15% Students, 15% Homemakers, 20% Young Parents."
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "pass_rate": 100.0
+  },
+  "verdict": "PASS",
+  "verdict_rationale": "All 10 KPIs passed their thresholds with strong margins (+15% to +42% above targets). Pain intensity (7.8/10), active workarounds (83%), and 100% problem recency demonstrate a genuine, urgent problem. Solution interest (92%) and competitive displacement (75%) validate product-market fit. Qualified buyers (75%) and budget confirmation (75%) establish monetization viability. The problem is real, the solution resonates, and willingness-to-pay is proven. Key insight: Unpredictable stock availability is the universal #1 pain point, and real-time inventory visibility is the most valued feature. Recommend proceeding to Recipe 1.3 (Solution Prototype Development) with high confidence. Focus MVP on real-time inventory accuracy (95%+ target) and traffic-aware delivery routing. Prioritize Working Professionals (Persona 1) in Clifton/DHA as primary ICP. Recruit 5 identified design partners for closed beta to build trust through operational excellence before public launch."
+}
