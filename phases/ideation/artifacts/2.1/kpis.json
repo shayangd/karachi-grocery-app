@@ -1,0 +1,113 @@
+{
+  "recipe_id": "2.1",
+  "generated_at": "2025-12-16T00:00:00Z",
+  "verdict": "CONDITIONAL",
+  "verdict_rationale": "Pakistan online grocery market ($350M) is below venture-scale threshold ($1B) but growing rapidly (17.5% CAGR). Karachi SAM ($350M) passes threshold. Path to $100M ARR requires 10-19% market share (CHALLENGING) with constrained unit economics (LTV/CAC 2.8-3.0). Market fragmentation (HHI 0.22) and strong growth provide opportunity, but requires exceptional execution and multi-city expansion. Data quality moderate due to Pakistan-specific gaps (58% variance).",
+  "kpis": [
+    {
+      "id": "tam_size",
+      "name": "TAM Size",
+      "score": 65,
+      "passed": false,
+      "threshold": {
+        "go": 80,
+        "conditional": 50
+      },
+      "weight": 0.20,
+      "evidence": "Pakistan Online Grocery TAM $350M (2024) calculated via proxy methods: 7-10% of e-commerce ($2.8B), 30% of food delivery ($2.4B), per-capita spend adjustment. Below $1B threshold but growing at 17.5% CAGR. Regional context: Asia-Pacific $289.24B, India $48.9B quick commerce provides expansion potential.",
+      "unit": "$M",
+      "score_raw": "$350M"
+    },
+    {
+      "id": "sam_size",
+      "name": "SAM Size",
+      "score": 90,
+      "passed": true,
+      "threshold": {
+        "go": 80,
+        "conditional": 60
+      },
+      "weight": 0.20,
+      "evidence": "Karachi addressable market $350M (annual), calculated top-down ($275-330M) and bottom-up ($429M) with 35% variance. Sufficient to support 3-5 competitors. 214K-267K ICP households concentrated in 4 neighborhoods (60-70% clustering).",
+      "unit": "$M",
+      "score_raw": "$350M"
+    },
+    {
+      "id": "path_to_100m",
+      "name": "Path to $100M ARR",
+      "score": 60,
+      "passed": false,
+      "threshold": {
+        "go": 80,
+        "conditional": 50
+      },
+      "weight": 0.20,
+      "evidence": "Requires 666,667 customers at $150 ARPU. Market share: 10.5% (Karachi Year 7 with growth) or 15.9% (3-city expansion). Challenging but achievable with multi-city strategy. Comparable: Blinkit 40% India market share, Instacart 20-30% USA.",
+      "unit": "% market share",
+      "score_raw": "10.5-19%"
+    },
+    {
+      "id": "unit_economics",
+      "name": "Unit Economics (LTV/CAC)",
+      "score": 65,
+      "passed": false,
+      "threshold": {
+        "go": 80,
+        "conditional": 50
+      },
+      "weight": 0.15,
+      "evidence": "Base case: LTV $429 / CAC $15 = 28.6 (HEALTHY). Risk-adjusted: LTV $225 (50% churn, 2yr lifetime) / CAC $80 (competitive market) = 2.8 (CONSTRAINED at threshold). Requires retention <35% churn and CAC <$30 for sustainability. CAC payback 1.2-4 months.",
+      "unit": "ratio",
+      "score_raw": "2.8-3.0"
+    },
+    {
+      "id": "market_growth",
+      "name": "Market Growth Rate (CAGR)",
+      "score": 85,
+      "passed": true,
+      "threshold": {
+        "go": 80,
+        "conditional": 60
+      },
+      "weight": 0.10,
+      "evidence": "Pakistan e-commerce 17.5% CAGR (Accio 2024-2027), APAC quick commerce 19.13% CAGR, India 16.93% CAGR. Strong tailwinds: smartphone adoption (57%→70-80%), digital payments (JazzCash 10.7T PKR, Easypaisa 9.5T PKR), urbanization.",
+      "unit": "%",
+      "score_raw": "17.5%"
+    },
+    {
+      "id": "data_quality",
+      "name": "Data Source Quality",
+      "score": 60,
+      "passed": false,
+      "threshold": {
+        "go": 80,
+        "conditional": 50
+      },
+      "weight": 0.10,
+      "evidence": "6 TAM sources (1 Tier 1 government, 5 Tier 2 commercial), 5 benchmark sources. Variance: Pakistan TAM 58.3%, Global 76.8% (both >30% threshold). No Gartner/IDC/Forrester Pakistan coverage. Used proxy calculations with triangulation. Moderate confidence.",
+      "unit": "sources",
+      "score_raw": "6 sources, 58.3% variance"
+    },
+    {
+      "id": "benchmark_alignment",
+      "name": "Benchmark Alignment",
+      "score": 85,
+      "passed": true,
+      "threshold": {
+        "go": 80,
+        "conditional": 60
+      },
+      "weight": 0.05,
+      "evidence": "Pakistan ARPU $120-180 vs. India $240-300 (40% lower). Variance -40% unadjusted, but ALIGNED when adjusted for Pakistan GDP ($1,500) vs. India ($2,500). CAC $15-30 vs. India $8-15 (aligned). Churn 35% (B2C benchmark).",
+      "unit": "%",
+      "score_raw": "-40% (GDP-adjusted: 0%)"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed": 3,
+    "failed": 4,
+    "pass_rate": 42.9,
+    "weighted_score": 70.3
+  }
+}
