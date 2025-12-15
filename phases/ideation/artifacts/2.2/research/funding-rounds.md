@@ -33,7 +33,7 @@
 
 | Company | Round | Date | Amount | Lead Investor | Co-Investors | Location | Source |
 |---------|-------|------|--------|---------------|--------------|----------|--------|
-| Krave Mart | Undisclosed | Dec 2024 | $10M | InDrive | - | Karachi, Pakistan | [Profit Pakistan](https://profit.pakistantoday.com.pk/2025/03/20/indrive-invests-10mn-in-pakistans-krave-mart/) |
+| Krave Mart | Strategic Investment | Mar 2025 | $10M | InDrive | - | Karachi, Pakistan | [Profit Pakistan](https://profit.pakistantoday.com.pk/2025/03/20/indrive-invests-10mn-in-pakistans-krave-mart/) |
 | Krave Mart | Seed | Dec 2021* | $6M | Mehta Ventures | Y Combinator, Conjunction Capital, Stryde71, Decart | Karachi, Pakistan | [Tracxn](https://tracxn.com/d/companies/krave-mart/) |
 | DealCart | Seed | Jul 2024 | $3M | Shorooq Partners | Sturgeon Capital, 4 others | Karachi, Pakistan | [Tracxn](https://tracxn.com/d/companies/dealcart/) |
 | DealCart | Pre-Seed | 2023* | $4.5M | UNDISCLOSED | - | Karachi, Pakistan | [PakGlobal Alumni](https://pakglobalalumni.org/startups/list) |
@@ -69,7 +69,8 @@
 
 | Quarter | # Rounds | Total Raised | Avg Round Size | Notable Rounds |
 |---------|----------|--------------|----------------|----------------|
-| Q4 2024 | 1 | $10M | $10M | Krave Mart $10M (InDrive) |
+| Q1 2025 | 1 | $10M | $10M | Krave Mart $10M (InDrive) |
+| Q4 2024 | 0 | $0 | - | - |
 | Q3 2024 | 1 | $3M | $3M | DealCart $3M (Shorooq Partners) |
 | Q2 2024 | 1 | $20M | $20M | Yango Ventures Fund $20M |
 | Q1 2024 | 0 | $0 | - | - |
@@ -78,9 +79,10 @@
 
 **Key Observations**:
 - Q4 2023 dominated by single mega-round (Careem $400M)
-- Q2-Q4 2024 saw recovery with strategic investments
-- No rounds in Q1 2024, Q3 2023
-- Total 4 rounds in 24 months (low activity)
+- Q2-Q3 2024 saw recovery with strategic investments
+- Q1 2025 shows continued momentum with Krave Mart $10M
+- No rounds in Q1 2024, Q4 2024, Q3 2023
+- Total 4 rounds in 24 months (low activity but showing recent upward trend)
 
 ---
 
@@ -99,14 +101,14 @@
 **Period**: June 16, 2025 to December 16, 2025
 
 | Company | Round | Date | Amount | Lead Investor |
-|---------|-------|------|--------|---------------|
-| Krave Mart | Undisclosed | Dec 2024 | $10M | InDrive |
+|---------|-------|------|--------|---|
+| Krave Mart | Strategic Investment | Mar 2025 | $10M | InDrive |
 | DealCart | Seed | Jul 2024 | $3M | Shorooq Partners |
 
 **Recent Rounds Count**: 2
 **Recent Capital**: $13M
 
-**Analysis**: Activity concentrated in Q3-Q4 2024, showing modest recovery after funding winter. Both rounds are grocery-specific (Krave Mart, DealCart), indicating investor interest in quick-commerce/grocery delivery despite broader ecosystem challenges.
+**Analysis**: Activity in Q3 2024 and Q1 2025, showing continued momentum. Both rounds are grocery-specific (Krave Mart, DealCart), indicating investor interest in quick-commerce/grocery delivery. Krave Mart's March 2025 round is particularly significant as most recent funding, signaling ongoing investor appetite in proven operators.
 
 ---
 
