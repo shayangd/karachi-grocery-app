@@ -1,0 +1,344 @@
+{
+  "recipe_id": "2.2",
+  "recipe_name": "Funding Signals Validation",
+  "venture": "Karachi Grocery App",
+  "validation_date": "2025-12-16",
+  "time_period": "Last 24 months (December 16, 2023 to December 16, 2025)",
+
+  "kpis": [
+    {
+      "id": "I2.2.1",
+      "name": "Funding Activity",
+      "result": {
+        "value": 4,
+        "unit": "rounds"
+      },
+      "threshold": {
+        "pass": "≥10 rounds",
+        "conditional": "5-9 rounds",
+        "fail": "<5 rounds"
+      },
+      "verdict": "FAIL",
+      "score": 2,
+      "max_score": 10,
+      "weight": 0.30,
+      "weighted_score": 0.60,
+      "interpretation": "Limited investor interest - <5 rounds indicate quiet market. Only 4 rounds in 24 months falls well below threshold for sustained investor interest, reflecting post-Airlift trauma and Pakistan country risk.",
+      "details": {
+        "seed_rounds": 1,
+        "strategic_rounds": 2,
+        "corporate_vc_funds": 1,
+        "series_a_plus_rounds": 0
+      }
+    },
+    {
+      "id": "I2.2.2",
+      "name": "Total Capital Deployed",
+      "result": {
+        "value": 413,
+        "unit": "million USD"
+      },
+      "threshold": {
+        "pass": "≥$50M",
+        "conditional": "$20M-$49M",
+        "fail": "<$20M"
+      },
+      "verdict": "PASS",
+      "score": 10,
+      "max_score": 10,
+      "weight": 0.25,
+      "weighted_score": 2.50,
+      "interpretation": "Significant capital deployment - venture-scale funding available. However, 97% concentrated in single mega-round (Careem $400M). Grocery-specific capital is only $13M (Krave Mart $10M + DealCart $3M).",
+      "details": {
+        "seed_capital": 3,
+        "series_a_capital": 0,
+        "series_b_capital": 0,
+        "strategic_capital": 410,
+        "mega_rounds_count": 1,
+        "mega_rounds_capital": 400,
+        "grocery_specific_capital": 13,
+        "careem_mega_round": 400
+      }
+    },
+    {
+      "id": "I2.2.3",
+      "name": "Investor Quality",
+      "result": {
+        "value": 0,
+        "unit": "tier-1 VCs"
+      },
+      "threshold": {
+        "pass": "≥3 tier-1 VCs",
+        "conditional": "1-2 tier-1 VCs",
+        "fail": "0 tier-1 VCs"
+      },
+      "verdict": "FAIL",
+      "score": 2,
+      "max_score": 10,
+      "weight": 0.25,
+      "weighted_score": 0.50,
+      "interpretation": "Limited institutional validation - no tier-1 VCs active. Zero top-tier institutional investors (Sequoia, a16z, Accel, Benchmark, etc.) despite global VC appetite for grocery delivery. Pakistan-specific risk aversion driven by Airlift failure, country risk, exit liquidity challenges.",
+      "details": {
+        "tier_1_vcs": 0,
+        "tier_2_vcs": 3,
+        "tier_3_vcs": 11,
+        "corporate_vcs": 5,
+        "y_combinator_validation": true,
+        "tier_1_equivalent_resources": [
+          "Y Combinator (accelerator, Tier-1 brand)",
+          "Delivery Hero ($10B+ parent)",
+          "Alibaba ($200B+ parent)",
+          "Uber ($150B+ parent)",
+          "InDrive ($1B+ valuation)"
+        ],
+        "investment_thesis_alignment": "MODERATE (30% high alignment, 40% partial, 30% not aligned)"
+      }
+    },
+    {
+      "id": "I2.2.4",
+      "name": "Funding Momentum",
+      "result": {
+        "value": "DECLINING",
+        "unit": "momentum category"
+      },
+      "threshold": {
+        "growing": ">10% YoY growth",
+        "stable": "-10% to +10% YoY",
+        "declining": "<-10% YoY"
+      },
+      "verdict": "DECLINING",
+      "score": 2,
+      "max_score": 10,
+      "weight": 0.15,
+      "weighted_score": 0.30,
+      "interpretation": "Funding declining - YoY rounds growth +200%, capital growth -91.75%. Paradox: round count recovered but capital deployment collapsed. Shift from mega-rounds (2023: $400M) to smaller strategic investments (2024: $33M).",
+      "details": {
+        "yoy_rounds_growth": 200.0,
+        "yoy_capital_growth": -91.75,
+        "year_1_rounds": 1,
+        "year_2_rounds": 3,
+        "year_1_capital": 400,
+        "year_2_capital": 33,
+        "qoq_trend": "Q4 2024: $10M, Q3 2024: $3M, Q2 2024: $20M, Q1 2024: $0"
+      }
+    },
+    {
+      "id": "I2.2.5",
+      "name": "Median Round Size",
+      "result": {
+        "value": 15,
+        "unit": "million USD"
+      },
+      "threshold": {
+        "pass": "≥$5M",
+        "conditional": "$2M-$4.9M",
+        "fail": "<$2M"
+      },
+      "verdict": "PASS",
+      "score": 10,
+      "max_score": 10,
+      "weight": 0.03,
+      "weighted_score": 0.30,
+      "interpretation": "Venture-scale rounds - median ≥$5M indicates growth-stage funding. Median of $15M suggests modest venture-scale funding available (sufficient for Series A, not Series B+).",
+      "details": {
+        "min": 3,
+        "percentile_25": 6.5,
+        "median": 15,
+        "percentile_75": 210,
+        "max": 400,
+        "rounds_below_5m": 1,
+        "rounds_5m_to_20m": 2,
+        "rounds_20m_to_50m": 0,
+        "rounds_above_50m": 1
+      }
+    },
+    {
+      "id": "I2.2.6",
+      "name": "Recent Activity (Last 6 Months)",
+      "result": {
+        "value": 2,
+        "unit": "rounds"
+      },
+      "threshold": {
+        "pass": "≥3 rounds",
+        "conditional": "1-2 rounds",
+        "fail": "0 rounds"
+      },
+      "verdict": "CONDITIONAL",
+      "score": 6,
+      "max_score": 10,
+      "weight": 0.01,
+      "weighted_score": 0.06,
+      "interpretation": "Some activity - 1-2 rounds in last 6 months show modest momentum. Recovery phase activity (2 rounds, $13M) indicates selective investor interest post-funding winter.",
+      "details": {
+        "recent_rounds": 2,
+        "recent_capital": 13,
+        "most_recent": {
+          "company": "Krave Mart",
+          "round": "Strategic Investment",
+          "amount": 10,
+          "date": "December 2024",
+          "lead_investor": "InDrive"
+        }
+      }
+    },
+    {
+      "id": "I2.2.7",
+      "name": "Investor Diversity",
+      "result": {
+        "value": 33,
+        "unit": "unique investors"
+      },
+      "threshold": {
+        "pass": "≥5 investors",
+        "conditional": "3-4 investors",
+        "fail": "<3 investors"
+      },
+      "verdict": "PASS",
+      "score": 10,
+      "max_score": 10,
+      "weight": 0.01,
+      "weighted_score": 0.10,
+      "interpretation": "Broad investor interest - ≥5 investors indicate diverse validation. However, high concentration: 73% of active investors backed Krave Mart, 33% backed failed Airlift.",
+      "details": {
+        "total_unique_investors": 33,
+        "active_investors": 22,
+        "tier_1_vcs": 0,
+        "tier_2_vcs": 3,
+        "tier_3_vcs": 11,
+        "corporate_vcs": 5,
+        "angels": 8,
+        "other": 6,
+        "most_active_investor": "Zayn Capital (2 investments)",
+        "concentration_risk": "HIGH",
+        "krave_mart_investor_concentration": "73% (16 of 22 active investors)"
+      }
+    }
+  ],
+
+  "overall_score": {
+    "weighted_score": 4.36,
+    "max_score": 10.0,
+    "verdict": "WEAK SIGNAL",
+    "confidence": "LOW",
+    "threshold_interpretation": {
+      "strong_validation": "≥8.0/10",
+      "moderate_validation": "5.0-7.9/10",
+      "weak_signal": "<5.0/10"
+    }
+  },
+
+  "decision_framework": {
+    "primary_kpis_summary": {
+      "funding_activity": "FAIL (4 rounds vs ≥10 threshold)",
+      "total_capital": "PASS ($413M vs ≥$50M threshold, but 97% concentrated)",
+      "investor_quality": "FAIL (0 tier-1 VCs vs ≥3 threshold)",
+      "funding_momentum": "DECLINING (-91.75% YoY capital)"
+    },
+    "primary_kpis_passing": 1,
+    "primary_kpis_total": 4,
+    "criteria_met": {
+      "strong_validation": {
+        "required": "All 4 primary KPIs pass + ≥3 tier-1 VCs + GROWING/STABLE momentum",
+        "met": false
+      },
+      "moderate_validation": {
+        "required": "2-3 primary KPIs pass + ≥1 tier-1 VC + STABLE momentum",
+        "met": false
+      },
+      "weak_signal": {
+        "required": "<2 primary KPIs pass OR 0 tier-1 VCs OR DECLINING momentum",
+        "met": true,
+        "reasons": [
+          "Only 1 of 4 primary KPIs pass",
+          "0 tier-1 VCs active",
+          "DECLINING momentum (-91.75% YoY capital)"
+        ]
+      }
+    },
+    "rationale": "Pakistan's grocery delivery funding landscape fails 3 of 4 primary KPIs. Only Total Capital ($413M) passes, but 97% is concentrated in Careem's $400M strategic super-app investment (not grocery-specific). Zero Tier-1 VC participation and declining capital momentum (-91.75% YoY) confirm limited institutional confidence, driven by post-Airlift trauma, country risk, and absence of top-tier institutional validation."
+  },
+
+  "implications": {
+    "fundraising_difficulty": "HIGH (8/10 difficulty rating)",
+    "expected_seed_timeline": "12-18 months",
+    "expected_series_a_timeline": "18-24 months",
+    "investor_appetite": "LOW traditional VC, MODERATE strategic investors",
+    "recommended_investor_types": [
+      "Y Combinator (highest ROI for validation)",
+      "Strategic Investors (InDrive, Yango - highest probability)",
+      "Pakistan-focused VCs (Zayn, Sarmayacar - fastest to first check)",
+      "Tier-2 VCs with emerging markets thesis (MSA Capital, Global Founders Capital)"
+    ],
+    "avoid_investor_types": [
+      "20VC Explorer (exited post-Airlift)",
+      "Delivery Hero DX Ventures (competitive conflict)",
+      "Traditional Tier-1 VCs (Pakistan risk too high)",
+      "Alibaba/Uber Corporate VCs (distracted/retreating)"
+    ]
+  },
+
+  "market_timing": {
+    "market_maturity": "Recovery Phase (Post-Crash, Selective Investment)",
+    "market_capitalization": "UNDERFUNDED ($1.5B opportunity, $13M recent capital = 0.9% capitalization)",
+    "timing_verdict": "FAVORABLE (Contrarian Entry Point)",
+    "entry_recommendation": "ENTER NOW with capital efficiency focus",
+    "optimal_entry_strategy": [
+      "Phase 1 (0-6 months): Stealth build with $100-300K friends/family, prove unit economics",
+      "Phase 2 (6-18 months): Seed fundraising $2-5M (YC + Pakistan VCs + strategic angels)",
+      "Phase 3 (18-30 months): Series A $10-15M (strategic investors) or acquisition"
+    ]
+  },
+
+  "competitive_dynamics": {
+    "well_funded_competitors": "CHALLENGE (Resource Asymmetry, but Mitigable)",
+    "resource_asymmetry": "50-100x capital advantage for corporate-backed players",
+    "competitive_advantages": [
+      "Capital efficiency (5-10x lower burn rate with kiryana partnerships)",
+      "Traffic intelligence (Pakistan-specific differentiation)",
+      "Asset-light moat (dark store players cannot replicate without cannibalizing investments)",
+      "Profitability focus (post-Airlift market rewards profitability over growth-at-all-costs)"
+    ],
+    "competitive_threats": [
+      "Pandamart (Delivery Hero, $10B+ parent, 40-50% market share)",
+      "Krave Mart ($16M raised, InDrive-backed, must raise Series B 2026-2027)",
+      "Customer acquisition cost competition",
+      "Supplier power concentration in funded competitors"
+    ],
+    "net_assessment": "MITIGABLE CHALLENGE with Strategic Advantages"
+  },
+
+  "critical_success_factors": [
+    "Capital Efficiency: Reach profitability on ≤$10M total capital",
+    "Unit Economics First: Positive contribution margin within 6 months",
+    "Y Combinator Validation: Apply immediately to unlock follow-on funding",
+    "Strategic Investor Focus: Target InDrive, Yango over traditional VCs",
+    "Differentiation Defense: Traffic-aware routing + kiryana partnerships create moat",
+    "Profitability Timeline: 18-month path to profitability required"
+  ],
+
+  "research_quality": {
+    "data_quality_score": "HIGH",
+    "funding_rounds_coverage": "100% (4 of 4 rounds with disclosed amounts)",
+    "competitor_coverage": "77.8% (7 of 9 competitors with funding data)",
+    "investor_classification_coverage": "100% (33 of 33 investors classified)",
+    "source_verification": "Multiple sources cross-referenced (Tracxn, Bloomberg, Profit Pakistan, Wikipedia)",
+    "limitations": [
+      "Careem mega-round skew (97% of capital in single strategic investment)",
+      "Corporate VC capex estimates (Pandamart $200M+ estimated, not disclosed)",
+      "Global vs Pakistan-specific funding (InDrive, Yango rounds support Pakistan but not Pakistan-specific)",
+      "Airlift historical data inflates investor count (11 investors no longer active post-failure)"
+    ],
+    "overall_confidence": "HIGH - Sufficient data quality and coverage to support WEAK SIGNAL verdict"
+  },
+
+  "key_insights": [
+    "Post-Airlift Trauma: Spectacular $85M failure (2022) created 'graveyard narrative' deterring traditional VC investment",
+    "Tier-1 VC Absence: Zero top-tier institutional investors despite global VC appetite for grocery delivery - Pakistan-specific, not sector-specific",
+    "Underfunded Opportunity: $1.5B+ market with only $13M recent capital = massive opening for differentiated players",
+    "Strategic Investor Emergence: InDrive ($10M), Yango ($20M fund) entering 2024 = alternative capital sources beyond traditional VCs",
+    "Capital Efficiency Advantage: Kiryana partnership model requires 90% less capex than dark stores, favored in post-Airlift risk-averse market",
+    "Concentration Risk: 73% of active investors backed Krave Mart = limited VC appetite for 'competitor #2', strategic investor path critical",
+    "Market Timing Favorable: Recovery phase (2024-2025) + reduced competition + underfunding = contrarian entry point for capital-efficient players"
+  ]
+}
