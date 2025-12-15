@@ -4,12 +4,17 @@
   "venture": "Karachi Grocery App",
   "execution_date": "2025-12-16",
   "verdict": "GO",
+<<<<<<< HEAD
   "verdict_rationale": "Strong decoupling opportunity with 8.65/10 opportunity score and 6 independent evidence sources. The combination of severe customer pain (9/10 for inventory visibility), weak incumbent performance (2/10), and high standalone viability (9/10 across technical, economic, and behavioral dimensions) creates ideal conditions for strategic decoupling. Primary weak link (real-time inventory visibility) and secondary weak link (traffic-aware routing) can be decoupled together as integrated MVD. Structural barriers (revenue cannibalization, architecture mismatch, brand risk, customer segmentation, execution complexity) provide 18-24 month competitive window.",
+=======
+  "verdict_rationale": "Strong decoupling opportunity with 7.6/10 opportunity score and 5 independent evidence sources. Step 3 (Check Stock Availability) represents a critical weak link with 8.5/10 pain, 3.0/10 incumbent performance, and 5.5-point gap. The step is highly decouplable across all three dimensions (technical, economic, behavioral feasibility all HIGH). Customers already pay Rs. 99-299 in delivery fees and value time savings at Rs. 500-1,000/week, demonstrating strong willingness-to-pay for inventory visibility alone. 83% actively building workarounds (calling stores, multi-store visits), validating behavioral readiness. Recipe 5.1 confirms no competitor offers real-time neighborhood inventory visibility, creating clear white space. Structural barriers (revenue cannibalization, architecture mismatch, brand risk) provide 18-24 month competitive window. All conditions for successful decoupling are met: customer pull (severe pain + workarounds), market gap (incumbent weakness + white space), technical feasibility (clean separation), economic viability (proven WTP), and strategic defensibility (structural barriers).",
+>>>>>>> 89d3be00f0b2246e615fc047b13df99279aa81d3
   "confidence": "HIGH",
   "kpis": [
     {
       "id": "decoupling_opportunity_score",
       "name": "Decoupling Opportunity Score",
+<<<<<<< HEAD
       "score": 86.5,
       "threshold": 70.0,
       "passed": true,
@@ -52,10 +57,17 @@
           }
         ]
       }
+=======
+      "score": 76,
+      "target": 70,
+      "passed": true,
+      "evidence": "Calculated as weighted average: (Pain Intensity 8.5/10 × 40%) + (Incumbent Weakness 7.0/10 × 35%) + (Standalone Viability 9.0/10 × 25%) = 7.6/10. Pain score of 8.5/10 validated by Recipe 1.2 showing 100% of interviewees cite stock unpredictability as #1 pain, 83% active workarounds, 2+ hours wasted/week. Incumbent weakness of 7.0/10 (inverted from 3.0/10 performance) validated by Recipe 5.1 competitive gap analysis: 'No competitor offers real-time, hyperlocal visibility into neighborhood store stock.' Standalone viability of 9.0/10 reflects HIGH ratings across all three feasibility dimensions: Technical (clean POS API inputs/outputs, no incumbent dependencies), Economic (proven WTP of Rs. 299/month vs. Rs. 500-1,000/week time value, 75% budget confirmation), Behavioral (83% workarounds, 75% multi-app usage, explicit unbundling desire from interviews). Score exceeds 7.0/10 threshold by 8.6%, indicating strong GO signal."
+>>>>>>> 89d3be00f0b2246e615fc047b13df99279aa81d3
     },
     {
       "id": "market_evidence_strength",
       "name": "Market Evidence Strength",
+<<<<<<< HEAD
       "score": 100.0,
       "threshold": 50.0,
       "passed": true,
@@ -212,11 +224,88 @@
   ],
   "artifacts_used": {
     "0.1_idea_statement": true,
+=======
+      "score": 83,
+      "target": 60,
+      "passed": true,
+      "evidence": "Identified 5 independent evidence sources supporting decoupling hypothesis, exceeding 3-source threshold by 67%. Source 1 (Interview Quotes): Primary qualitative from Recipe 1.2 - 'I've wasted 2 hours last week going to 3 different stores because none had fresh eggs.' Source 2 (Workaround Behavior): Primary behavioral from Recipe 1.2 I1.2.2 - 83% (10/12) building workarounds (calling stores, multi-store visits, app trial-and-error). Source 3 (Competitive Gap): Secondary intelligence from Recipe 5.1 - professional analysis confirms 'no competitor emphasizes real-time neighborhood inventory visibility' across 8 analyzed players. Source 4 (Competitor Failures): Primary qualitative from Recipe 1.2 Theme 3 - 75% (9/12) report Pandamart/Daraz/InstaShop failures (canceled orders, wrong items, no inventory transparency). Source 5 (Willingness-to-Pay): Primary quantitative from Recipe 1.2 I1.2.7, I1.2.9 - 75% budget confirmation, Rs. 99-299 delivery fees already paid, Rs. 500-1,000/week time-value calculations. Evidence triangulates across qualitative pain (interviews), quantitative behavior (workarounds, WTP), competitive intelligence (gap analysis), and incumbent failures (displacement opportunity). Strong mix of primary (4/5) and secondary (1/5) sources reduces single-point-of-failure risk. Normalized score: (5 sources / 6 maximum sources) × 100 = 83/100."
+    }
+  ],
+  "summary": {
+    "total_kpis": 2,
+    "passed_kpis": 2,
+    "pass_rate": 100,
+    "overall_score": 79.5
+  },
+  "weak_link": {
+    "step_number": 3,
+    "step_name": "Check Stock Availability Before Ordering/Visiting",
+    "pain_score": 8.5,
+    "incumbent_score": 3.0,
+    "gap_score": 5.5,
+    "evidence_summary": "100% of interviewees (12/12) cited unpredictable stock as #1 pain. 83% building active workarounds (multi-store visits, calling ahead, app trial-and-error). 2+ hours wasted per week valued at Rs. 500-1,000. No competitor offers real-time neighborhood inventory visibility per Recipe 5.1 gap analysis."
+  },
+  "mvd_recommendation": {
+    "target_step": "Step 3: Check Stock Availability",
+    "core_features": [
+      "Live neighborhood inventory search (item lookup shows nearby stores with real-time stock status)",
+      "Item-level stock status (3 states: In Stock / Low Stock / Out of Stock)",
+      "Store contact & navigation integration (click-to-call, Google Maps routing)"
+    ],
+    "excluded_features": [
+      "Ordering/checkout (customer uses competitor apps or manual visit)",
+      "Delivery/logistics (incumbents handle fulfillment)",
+      "Price comparison (focus on availability, not cost)",
+      "Traffic-aware routing (defer to post-MVD)",
+      "Subscriptions/memberships (simple freemium initially)"
+    ],
+    "validation_metrics": [
+      {
+        "metric": "Usage Frequency",
+        "target": "60% of beta users use app 2+ times/week within first month",
+        "threshold": "40% minimum to proceed"
+      },
+      {
+        "metric": "Inventory Accuracy",
+        "target": "95%+ customer-reported match between app and physical stock",
+        "threshold": "85% minimum to scale"
+      },
+      {
+        "metric": "Referral Rate",
+        "target": "30% of beta users refer 1+ friend within first month",
+        "threshold": "15% minimum for product-market fit"
+      }
+    ],
+    "build_timeline_weeks": 6,
+    "initial_store_count": 20,
+    "initial_user_count": 5,
+    "geographic_focus": "Clifton/DHA neighborhoods (Persona 1 concentration)"
+  },
+  "competitive_window_months": 21,
+  "competitive_barriers": [
+    "Revenue cannibalization (dark stores lose transaction control, marketplaces expose margin weaknesses)",
+    "Architecture mismatch (centralized dark stores vs. distributed kiryana network requires infrastructure rebuild)",
+    "Brand/positioning risk (premium convenience players dilute focus, super apps lack vertical depth)",
+    "Customer segmentation conflict (incumbents target different priorities: speed extremes vs. variety + reliability)",
+    "Organizational inertia (large players like Delivery Hero, Alibaba have slow decision cycles)"
+  ],
+  "feasibility_assessment": {
+    "technical_feasibility": "HIGH",
+    "technical_justification": "Clean data inputs (POS APIs, manual tablet entry), clean outputs (customer app, potential API partnerships), no incumbent dependencies. Proven tech stack (React Native, Firebase, Google Maps API). POS integration precedent exists (Square, Shopify).",
+    "economic_feasibility": "HIGH",
+    "economic_justification": "Proven WTP: Customers already pay Rs. 99-299 delivery fees, value time savings at Rs. 500-1,000/week. Proposed Rs. 299/month subscription delivers 2-4x ROI. Multiple monetization paths: B2C freemium, B2B SaaS (API to competitors), affiliate (store commissions). 75% budget confirmation from Recipe 1.2 I1.2.7.",
+    "behavioral_feasibility": "HIGH",
+    "behavioral_justification": "83% building workarounds (calling stores, multi-store visits) proves active problem-solving. 75% use multiple apps (Pandamart, Daraz, manual) showing multi-tool comfort. Explicit unbundling desire from interviews: 'If I could see what's in stock before ordering, I'd save so much time.' Adjacent precedent: price comparison, navigation apps used separately from transactions."
+  },
+  "artifacts_used": {
+    "0.1_idea_refinement": true,
+>>>>>>> 89d3be00f0b2246e615fc047b13df99279aa81d3
     "1.1_interview_prep": true,
     "1.2_problem_validation": true,
     "1.3_market_signals": false,
     "5.1_competitor_list": true
   },
+<<<<<<< HEAD
   "metadata": {
     "analyzer_version": "1.0",
     "execution_mode": "single-executor",
@@ -227,4 +316,18 @@
     "competitive_barriers_analyzed": 5,
     "evidence_sources_validated": 6
   }
+=======
+  "next_steps": [
+    "Recruit 5 design partners from Recipe 1.2 interview pipeline (Week 1)",
+    "Onboard 20 kiryana stores in Clifton/DHA with POS systems or manual tablets (Weeks 1-3)",
+    "Build MVP: React Native app + Firebase backend + Google Maps/Twilio integrations (Weeks 2-4)",
+    "Launch beta with design partners, track usage frequency + inventory accuracy (Week 4)",
+    "Month 1 checkpoint: Validate 60%+ usage 2x/week, 95%+ accuracy (proceed if pass, pivot if fail)",
+    "Expand to 20-30 beta users via referrals (Months 2-3)",
+    "Scale store network to 50-100 stores (Months 2-4)",
+    "A/B test monetization models: freemium vs. transaction fee (Months 4-6)",
+    "Explore API partnerships with InstaShop, GrocerApp (Months 5-6)",
+    "Month 6 checkpoint: If 100+ users, 50+ stores, 20%+ conversion → raise $300-500K seed round"
+  ]
+>>>>>>> 89d3be00f0b2246e615fc047b13df99279aa81d3
 }
