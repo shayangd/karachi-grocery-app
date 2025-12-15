@@ -1,359 +1,109 @@
 {
   "recipe_id": "2.1",
-<<<<<<< HEAD
-  "generated_at": "2025-12-17T00:00:00Z",
-  "verdict": "CONDITIONAL",
-  "verdict_rationale": "Market exists with strong fundamentals (healthy unit economics 6.4x LTV/CAC, growing 17.5% CAGR, $550M SAM), but TAM below venture-scale threshold ($650M vs $1B) and path to $100M ARR requires unrealistic 44% market share at current ARPU assumptions. Conservative ARPU estimates ($64/year, 57% below benchmark) may be undervaluing market potential.",
-=======
-<<<<<<< HEAD
   "recipe_name": "Market Sizing Analysis",
   "venture_name": "Karachi Grocery App",
-  "validation_date": "2025-12-16",
-  "verdict": "CONDITIONAL",
-  "verdict_rationale": "Borderline venture-scale opportunity with $600M TAM (below $1B threshold) but exceptional 45% CAGR growth mitigates size concerns. Strong unit economics (LTV/CAC 4.8x) validate business model sustainability. Path to $100M ARR requires 48-61% market share, necessitating geographic expansion beyond Karachi to Lahore/Islamabad within 18-24 months. SAM of $50M at CONDITIONAL threshold grows to $152M by 2027, improving venture-scale potential. Market concentration (Foodpanda 50%+) creates competitive challenges but also validates category viability. Recommendation: Pursue with disciplined execution focused on inventory accuracy differentiation, rapid multi-city expansion, and ARPU optimization to $50-60 through subscriptions.",
-=======
-<<<<<<< HEAD
-  "recipe_name": "Market Sizing Analysis",
-  "venture_name": "Karachi Grocery App",
-  "validation_date": "2025-12-16",
-  "verdict": "GO",
-  "verdict_rationale": "Venture-scale opportunity exists with some constraints. SAM of $130M is sufficient (PASS), unit economics are healthy with 3.75 LTV/CAC ratio (PASS), and market is growing at 12.75% CAGR (PASS). TAM of $311.8M is borderline for Pakistan-only focus (CONDITIONAL), and path to $100M requires 44.4% Pakistan-wide market share (CHALLENGING). However, the combination of validated differentiation (75% switching intent), healthy unit economics, and precedent for market concentration (Foodpanda 40-50% share) creates a compelling venture-backable opportunity. Multi-city expansion strategy (Karachi + Lahore + Islamabad) provides realistic path to $100M ARR with 15-25% share per city.",
-=======
   "generated_at": "2025-12-16T00:00:00Z",
-  "verdict": "CONDITIONAL",
-  "verdict_rationale": "Pakistan online grocery market ($350M) is below venture-scale threshold ($1B) but growing rapidly (17.5% CAGR). Karachi SAM ($350M) passes threshold. Path to $100M ARR requires 10-19% market share (CHALLENGING) with constrained unit economics (LTV/CAC 2.8-3.0). Market fragmentation (HHI 0.22) and strong growth provide opportunity, but requires exceptional execution and multi-city expansion. Data quality moderate due to Pakistan-specific gaps (58% variance).",
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+  "verdict": "NO_GO",
+  "verdict_rationale": "Pakistan online grocery market ($400M TAM) is below the $500M minimum venture-scale threshold, and Karachi-focused SAM ($50M) cannot support $100M ARR without impossible market share (476%). However, healthy unit economics (LTV/CAC 4.47) and strong market growth (18% CAGR) indicate viability for alternative paths: bootstrapped regional business, strategic acquisition target, or venture-backed with explicit pan-South Asia expansion strategy.",
   "kpis": [
     {
       "id": "tam_size",
       "name": "TAM Size",
-      "score": 65,
-<<<<<<< HEAD
+      "score": 30,
       "passed": false,
-      "threshold": {
-        "pass": 1000,
-        "conditional": 500,
-        "fail": 0
-      },
-      "weight": 0.143,
-      "evidence": "Pakistan online grocery TAM $650M (2024) from 8 sources. Calculated as Pakistan e-commerce $3.9B × 17.5% grocery share. Sources: Tribune India ($5.0B), Accio ($2.8B), Research and Markets (global $264.94B), Mordor Intelligence (APAC $289.24B). Variance 56.4% due to social commerce inclusion/exclusion.",
-      "unit": "$M",
-      "score_raw": "$650M"
-=======
-<<<<<<< HEAD
-      "passed": false,
-      "evidence": "Pakistan quick commerce TAM estimated at $600M (2024) through triangulation of three methods: (1) Industry subset analysis ($280-750M = 10-15% of $2.8-5B e-commerce), (2) India proxy adjusted for population/GDP ($637M = $6.5B × 9.8%), (3) Bottom-up from competitors ($600M = $75M current / 12.5% penetration). TAM below $1B venture-scale threshold but growing to $3.5B by 2029 at 45% CAGR. Sources: Accio ($2.8B Pakistan e-commerce), Tribune Pakistan ($5B), Mordor Intelligence ($770M frozen food), India quick commerce data (Contrary Research $6-7B), competitor revenues (Foodpanda $50M, Krave Mart $7.5M, others $18M total). Variance: 67% due to emerging market data gaps, but three independent methods converge on $400-800M range providing moderate confidence."
-=======
-<<<<<<< HEAD
-      "passed": true,
-      "evidence": "Pakistan grocery delivery TAM of $311.8M (2025) growing to $568.2M (2030) at 12.75% CAGR. Below the $500M CONDITIONAL threshold ($1B for PASS) for Pakistan-only market, resulting in a score of 65 (CONDITIONAL range). However, early-stage penetration (5.1%) and strong growth indicate significant upside. Sources: Statista Market Insights (Tier 1), PCMI (Tier 2), industry analysis. TAM variance 83.5% but reconciled to <20% for like-for-like comparison (grocery-only 2025 estimates)."
-=======
-      "passed": false,
-      "threshold": {
-        "go": 80,
-        "conditional": 50
-      },
-      "weight": 0.20,
-      "evidence": "Pakistan Online Grocery TAM $350M (2024) calculated via proxy methods: 7-10% of e-commerce ($2.8B), 30% of food delivery ($2.4B), per-capita spend adjustment. Below $1B threshold but growing at 17.5% CAGR. Regional context: Asia-Pacific $289.24B, India $48.9B quick commerce provides expansion potential.",
-      "unit": "$M",
-      "score_raw": "$350M"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "Pakistan online grocery TAM estimated at $400M (2024) through triangulation of 3 methodologies: (1) Top-down from e-commerce: $270M-$540M, (2) India proxy scaling: $500M-$600M, (3) Bottom-up from Karachi: $260M-$300M. Base estimate $400M is below $500M minimum threshold for venture-scale. 82.5% variance due to lack of tier-1 analyst coverage (Gartner/IDC/Forrester do not cover Pakistan market). Score: 30/100 (FAIL: <$500M threshold)."
     },
     {
       "id": "sam_size",
       "name": "SAM Size",
-<<<<<<< HEAD
-      "score": 90,
-      "passed": true,
-      "threshold": {
-        "pass": 100,
-        "conditional": 50,
-        "fail": 0
-      },
-      "weight": 0.143,
-      "evidence": "Karachi grocery delivery SAM $550M validated via 3 methods: (1) Top-down filtering $156M conservative, (2) Bottom-up competitor sum $425-775M, (3) Bottom-up ICP spend $225M. Competitor revenues $85-155M imply 15-25% current penetration. 2M ICP households × 75% reachability × 15-25% adoption.",
-      "unit": "$M",
-      "score_raw": "$550M"
-=======
-<<<<<<< HEAD
       "score": 65,
-      "passed": false,
-      "evidence": "SAM calculated at $50M (2024) for Karachi-focused strategy, growing to $152M by 2027 at 45% CAGR. Top-down: $600M TAM × 13% geographic filter (Karachi's 20-25% of urban GDP despite 8.7% population) × 100% segment × 100% use-case = $78M, adjusted to $50M for addressability constraints. Bottom-up validation: $72.5M sum of competitor revenues in addressable segment (Foodpanda $50M + Krave Mart $7.5M + DealCart $3.5M + GrocerApp $5.5M + Careem $2M + Daraz grocery $4M), variance only 7.3% confirming alignment. SAM at exactly $50M threshold is borderline; requires expansion to Lahore ($40M+ SAM) and Islamabad ($20M+ SAM) to reach $150M+ combined SAM for venture-scale potential."
-=======
-      "score": 90,
       "passed": true,
-<<<<<<< HEAD
-      "evidence": "Karachi SAM of $130.0M exceeds $100M threshold (PASS). Cross-validated via two methods: (1) Top-down filtering: $311.8M TAM × 41.7% segment filter = $130M, (2) Bottom-up competitor revenues: $108M-$153M range. Variance between methods is 17.3% (acceptable convergence). Karachi represents 30-40% of Pakistan grocery delivery market with 1.0-1.8M target ICP households (Q3-Q5 income, ages 25-54, smartphone access)."
-=======
-      "threshold": {
-        "go": 80,
-        "conditional": 60
-      },
-      "weight": 0.20,
-      "evidence": "Karachi addressable market $350M (annual), calculated top-down ($275-330M) and bottom-up ($429M) with 35% variance. Sufficient to support 3-5 competitors. 214K-267K ICP households concentrated in 4 neighborhoods (60-70% clustering).",
-      "unit": "$M",
-      "score_raw": "$350M"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "Karachi q-commerce SAM estimated at $50M (2025) using conservative bottom-up methodology: Karachi represents 30-35% of Pakistan market ($400M × 32.5% = $130M broader online grocery, but $40-60M for q-commerce specific positioning). Using $50M conservative estimate places SAM exactly at minimum threshold ($50M-$99M = CONDITIONAL). Score: 65/100 (CONDITIONAL: at threshold boundary)."
     },
     {
       "id": "path_to_100m",
       "name": "Path to $100M ARR",
-<<<<<<< HEAD
-      "score": 25,
+      "score": 15,
       "passed": false,
-      "threshold": {
-        "achievable": 10,
-        "challenging": 25,
-        "unlikely": 100
-      },
-      "weight": 0.143,
-      "evidence": "Requires 666,667 customers at $150 ARPU (Pakistan q-commerce benchmark) = 44.4% of 1.5M reachable households. Current market leader (Foodpanda) has 35-40% share. At venture's conservative $64 ARPU, would need 1.56M customers (104% of market). Path becomes CHALLENGING (11% share) with Pakistan national expansion or ACHIEVABLE (6% share) with regional expansion.",
-      "unit": "% market share",
-      "score_raw": "44.4%"
-=======
-<<<<<<< HEAD
-      "score": 40,
-      "passed": false,
-      "evidence": "At base ARPU of $35/customer/year (aligned with Pakistan benchmarks: Foodpanda $25, GrocerApp $35, DealCart $40, mean $35), reaching $100M ARR requires 2,857,143 customers. This represents 48% of Pakistan urban middle-class reachable households (6M) or 61% of Karachi+Lahore+Islamabad combined (4.68M estimate). Karachi-only addressable: 819K households (1.05M ICP × 78% reachability), making $100M ARR impossible without geographic expansion (would require 349% market share). Path is CHALLENGING, requiring either: (1) Multi-city expansion to Lahore/Islamabad within 18-24 months capturing 15-20% share across 3 cities, OR (2) ARPU growth to $60-80 through premium services/subscriptions reducing customers needed to 1.25-1.67M (27-36% share), OR (3) Combination approach. Year 5 Karachi-only SOM: $48M (11.5% market share of Phase 1 areas), confirming expansion dependency."
-=======
-      "score": 60,
-<<<<<<< HEAD
-      "passed": true,
-      "evidence": "At $90 ARPU (base case), achieving $100M ARR requires 1,111,111 customers, representing 174.3% of reachable Karachi ICP (637,500 households) or 44.4% Pakistan-wide market share. This falls in the CHALLENGING range (10-25% threshold exceeded, but precedent exists). Foodpanda holds 40-50% Pakistan market share, demonstrating concentrated market structure is achievable. Alternative path: Multi-city expansion (Karachi $20M + Lahore $15M + Islamabad $10M + others $55M) achieves $100M with 15-25% share per city. Score of 60 reflects challenging but achievable path."
-=======
-      "passed": false,
-      "threshold": {
-        "go": 80,
-        "conditional": 50
-      },
-      "weight": 0.20,
-      "evidence": "Requires 666,667 customers at $150 ARPU. Market share: 10.5% (Karachi Year 7 with growth) or 15.9% (3-city expansion). Challenging but achievable with multi-city strategy. Comparable: Blinkit 40% India market share, Instacart 20-30% USA.",
-      "unit": "% market share",
-      "score_raw": "10.5-19%"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "Path to $100M ARR is mathematically impossible in Karachi market alone. At $40/year ARPU (base case), would require 2,500,000 customers = 476% of reachable ICP (525,000 households). Alternative scenarios equally impossible: Low ($50 ARPU) requires 381% share, High ($30 ARPU) requires 635% share. Even $10M ARR requires 48% market share (near-monopoly). Geographic expansion to Pakistan-wide or South Asia mandatory for venture-scale outcomes. Score: 15/100 (UNLIKELY: >100% market share required)."
     },
     {
       "id": "unit_economics",
       "name": "Unit Economics (LTV/CAC)",
-<<<<<<< HEAD
-      "score": 85,
+      "score": 90,
       "passed": true,
-      "threshold": {
-        "healthy": 3.0,
-        "constrained": 2.0,
-        "broken": 0
-      },
-      "weight": 0.143,
-      "evidence": "LTV $128 (ARPU $64/year × 24-month lifetime) ÷ CAC $20 (conservative estimate) = 6.4x ratio. CAC payback 3.75 months ($20 ÷ $5.33 monthly ARPU). ICP research shows blended CAC $1.60 (PKR 450), but adjusted to $20 for realistic scale economics. Significantly better than regional competitors (Daraz unprofitable, Delivery Hero 0.4% FCF margin).",
-      "unit": "ratio",
-      "score_raw": "6.4"
-=======
-<<<<<<< HEAD
-      "score": 85,
-      "passed": true,
-      "evidence": "LTV/CAC ratio of 4.8x indicates healthy, sustainable unit economics. Calculation: ARPU $35 × 2.5 year lifetime (40% annual churn) = $87.50 LTV, divided by $18 CAC (India quick commerce benchmarks ₹300-800 adjusted for Pakistan) = 4.8x ratio. CAC payback period: 6.2 months ($18 CAC / $2.92 monthly ARPU), well below 12-month B2C target. Sensitivity analysis: Even at low ARPU ($20) and high churn (50%), LTV/CAC remains 2.8x (above 2.0 constrained threshold). High ARPU scenario ($60): 8.3x LTV/CAC. Strong unit economics provide buffer for execution challenges and enable profitable growth at sub-scale ($10-20M ARR) while pursuing $100M+ opportunity. Validated by competitor data: Krave Mart achieving 'near-profitability' (Bloomberg 2023) vs. Airlift's failure losing PKR 200-300/order demonstrates disciplined unit economics are viable in Pakistan market."
-=======
-<<<<<<< HEAD
-      "score": 85,
-      "passed": true,
-      "evidence": "LTV/CAC ratio of 3.75 in conservative base case (HEALTHY, exceeds ≥3.0 threshold). Calculation: LTV = $90 ARPU × 1.5 years lifetime = $135; CAC = $36 (conservative 2× India benchmark adjusted for Pakistan market education). CAC payback period of 4.8 months is within acceptable B2C range (≤12 months target). High shopping frequency (3-5×/week) supports strong retention. Key risk: CAC assumptions based on India proxy; requires validation in MVP launch."
-=======
-      "score": 65,
-      "passed": false,
-      "threshold": {
-        "go": 80,
-        "conditional": 50
-      },
-      "weight": 0.15,
-      "evidence": "Base case: LTV $429 / CAC $15 = 28.6 (HEALTHY). Risk-adjusted: LTV $225 (50% churn, 2yr lifetime) / CAC $80 (competitive market) = 2.8 (CONSTRAINED at threshold). Requires retention <35% churn and CAC <$30 for sustainability. CAC payback 1.2-4 months.",
-      "unit": "ratio",
-      "score_raw": "2.8-3.0"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "Unit economics are healthy and sustainable. LTV = $67 (ARPU $40 × 1.67 year lifetime at 60% annual churn), CAC = $15 (mid-point of $10-20 Pakistan e-commerce benchmark), LTV/CAC = 4.47 (well above 3.0 threshold). CAC payback = 4.5 months (within acceptable range for emerging market B2C). This is strongest positive signal - business can be profitable at scale even if not venture-scale in current geographic scope. Score: 90/100 (HEALTHY: ratio ≥3.0)."
     },
     {
       "id": "market_growth",
       "name": "Market Growth Rate (CAGR)",
-<<<<<<< HEAD
-      "score": 88,
-      "passed": true,
-      "threshold": {
-        "growing": 10,
-        "stable": 0,
-        "declining": -100
-      },
-      "weight": 0.143,
-      "evidence": "Pakistan e-commerce growing 17.5-35% CAGR (2024-2030). Conservative estimate 17.5% CAGR for online grocery. Drivers: internet penetration 45.7%→60%+, smartphone adoption 57%→75%+, digital payments 89% of transactions (400% growth since 2020), 78% trust online platforms (vs 31% in 2021). Asia-Pacific online grocery 13.55% CAGR, Global 15.36% CAGR.",
-      "unit": "%",
-      "score_raw": "17.5%"
-=======
-<<<<<<< HEAD
       "score": 90,
       "passed": true,
-      "evidence": "Pakistan quick commerce market growing at 45% CAGR from $600M (2024) to $3.5B (2029), driven by six structural tailwinds: (1) Digital payments surge from <10% to 50% of retail transactions (2020-2024), JazzCash 48M wallets reducing cash friction, (2) Smartphone/internet penetration acceleration (70M users to 80M+ by 2026, 59M 4G users enabling app shopping, 8.4 GB/month data usage up 71% YoY), (3) Youth demographic dividend (median age 22, 60%+ under 30, digital-native Gen Z driving adoption), (4) Urbanization & traffic congestion (Karachi 20.4M to 25M by 2030, 67% of ICP cite traffic as barrier, dense clusters 19K-55K/km² enable 10-30min delivery), (5) E-commerce infrastructure buildout (dark stores, last-mile networks, cold chain for $770M frozen food market), (6) Capital inflows validation (Airlift $85M, InDrive investment in Krave Mart Nov 2024, Yango-DealCart partnership Dec 2025, government $5B to $20B e-commerce target by 2030). Growth rate comparable to India quick commerce 2020-2024 trajectory (150%+ early stage moderating to 40-50%)."
-=======
-      "score": 85,
-      "passed": true,
-<<<<<<< HEAD
-      "evidence": "12.75% CAGR (2025-2030) exceeds ≥10% GROWING threshold. Current TAM $311.8M growing to $568.2M by 2030. YoY growth 26.8% (2024-2025) demonstrates acceleration. Market stage: Early Growth (5.1% current penetration vs. 10-15% in mature markets). Growth drivers: urbanization (Karachi 18.1M to 25-33M by 2030), smartphone penetration (15-20% YoY), digital payments (400% growth since 2020), young demographics (64% under 30). Secular tailwinds support sustained growth."
-=======
-      "threshold": {
-        "go": 80,
-        "conditional": 60
-      },
-      "weight": 0.10,
-      "evidence": "Pakistan e-commerce 17.5% CAGR (Accio 2024-2027), APAC quick commerce 19.13% CAGR, India 16.93% CAGR. Strong tailwinds: smartphone adoption (57%→70-80%), digital payments (JazzCash 10.7T PKR, Easypaisa 9.5T PKR), urbanization.",
-      "unit": "%",
-      "score_raw": "17.5%"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "Pakistan online grocery market growing rapidly at 18% CAGR (2024-2029), double the 10% threshold for 'growing' classification. Growth drivers include: (1) Digital payment infrastructure (83% of retail transactions now digital, up from <10% in 2020), (2) Smartphone penetration (111M internet users, 70% smartphone adoption), (3) Urbanization (Karachi growing to 25-26M by 2030), (4) Traditional retail pain points (traffic congestion, unpredictable timings), (5) Regional precedent (India q-commerce at $5.6B validates model). CAGR exceeds Asia-Pacific average (13.55%) and aligns with Pakistan e-commerce (17%). Score: 90/100 (GROWING: ≥10% CAGR)."
     },
     {
       "id": "data_quality",
       "name": "Data Source Quality",
-<<<<<<< HEAD
       "score": 60,
       "passed": true,
-      "threshold": {
-        "high": 3,
-        "moderate": 2,
-        "low": 1
-      },
-      "weight": 0.143,
-      "evidence": "8 independent sources across 3 tiers: Tier 1 (Research and Markets, Mordor Intelligence), Tier 2 (Agriculture Canada, Express Tribune, Tribune India), Tier 3 (Accio, BlueEx Prospectus, Inc42). TAM variance 56.4% (>30% threshold) due to social commerce inclusion/exclusion. No Pakistan-specific online grocery reports from Gartner/Forrester/IDC. SAM triangulated via 3 methods with <40% variance.",
-      "unit": "sources",
-      "score_raw": "8 sources, 56.4% variance"
-=======
-<<<<<<< HEAD
-      "score": 65,
-      "passed": false,
-      "evidence": "8 primary sources analyzed (1 Tier-1: Mordor Intelligence; 2 Tier-2: Tribune Pakistan government data, Pakistan Bureau of Statistics; 5 Tier-3: Accio, ECDB, Contrary Research, Y Combinator, Data Darbar) plus 12 secondary sources (interviews, news). TAM variance: 56% for Pakistan e-commerce ($2.8B Accio vs $5B Tribune), 67% for quick commerce subset ($400-800M range), both exceeding 30% threshold due to emerging market data gaps and differing market definitions (Accio: tracked GMV; Tribune: government estimate including B2B/informal). However, THREE independent TAM methods converge on $400-800M (industry subset, India proxy, bottom-up competitors), providing triangulation confidence. SAM variance excellent: 7.3% (top-down $78M vs bottom-up $72.5M). Limitations: No Tier-1 analyst coverage of Pakistan quick commerce (Gartner/Forrester/IDC don't publish Pakistan reports), competitor revenues estimated not disclosed, Karachi city-level TAM uses population/GDP proxies. Data quality MODERATE due to high variance but sufficient methodological rigor (triangulation, cross-validation) for GO/NO-GO decision in emerging market context."
-=======
-<<<<<<< HEAD
-      "score": 90,
-      "passed": true,
-      "evidence": "15 total sources: 2 Tier 1 (Statista, PCMI), 5 Tier 2 (PTA, PBS, UN, CIA, World Bank), 8 Tier 3 (Delivery Hero, Bloomberg, YC, industry reports). TAM variance 83.5% headline but reconciled to <20% for like-for-like comparison (2025 grocery-only estimates). SAM variance 17.3% (top-down vs. bottom-up methods). ARPU benchmarks consistent across 5 competitors. Meets HIGH QUALITY threshold (≥3 sources, ≤30% reconciled variance)."
-=======
-      "score": 60,
-      "passed": false,
-      "threshold": {
-        "go": 80,
-        "conditional": 50
-      },
-      "weight": 0.10,
-      "evidence": "6 TAM sources (1 Tier 1 government, 5 Tier 2 commercial), 5 benchmark sources. Variance: Pakistan TAM 58.3%, Global 76.8% (both >30% threshold). No Gartner/IDC/Forrester Pakistan coverage. Used proxy calculations with triangulation. Moderate confidence.",
-      "unit": "sources",
-      "score_raw": "6 sources, 58.3% variance"
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+      "evidence": "TAM estimate based on 3+ independent methodologies but with 82.5% variance (exceeds 30% threshold). Key gap: No tier-1 analyst reports (Gartner/IDC/Forrester) specifically covering Pakistan online grocery - market too small/emerging for dedicated western analyst coverage ($400M vs India $5.6B). Mitigation: Used tier-1 regional data (Mordor Intelligence Asia-Pacific $289.24B, Agriculture Canada Indo-Pacific $85.0B, Research and Markets Global $264.94B) then calculated Pakistan subset via triangulation. All 3 methods converged to $270M-$600M range. Data completeness: 75%. Score: 60/100 (MODERATE: 3+ sources but >30% variance)."
     },
     {
       "id": "benchmark_alignment",
       "name": "Benchmark Alignment",
-<<<<<<< HEAD
-      "score": 40,
-      "passed": true,
-      "threshold": {
-        "aligned": 30,
-        "optimistic": -30,
-        "conservative": -100
-      },
-      "weight": 0.143,
-      "evidence": "Venture ARPU $64/year (PKR 18,000) vs Pakistan q-commerce benchmark $150/year = -57.3% variance. Conservative assumptions driven by: (1) mass-market vs premium positioning, (2) delivery fees only vs basket value, (3) 40% subscription adoption may be optimistic. Competitors: Daraz $18, Careem $56, Krave Mart $200-400. India comparables: Zepto $151-227, Blinkit $380-455.",
-      "unit": "% variance",
-      "score_raw": "-57.3%"
-=======
       "score": 85,
       "passed": true,
-<<<<<<< HEAD
-      "evidence": "Venture base ARPU assumption of $35/customer/year is perfectly aligned (0% variance) with Pakistan quick commerce benchmark mean. Competitor ARPU data: Foodpanda Pandamart $25 (mass market, Pandapro subscription model), Krave Mart $75 (premium, credit card users, Y Combinator pedigree), DealCart $40 (discount/social commerce), GrocerApp $35 (traditional e-commerce, 50% discounts), Daraz grocery $20 (secondary category, slow delivery). Revenue-weighted benchmark mean: $35 (excluding outliers). Venture assumptions use conservative base ($35), low ($20), high ($60) scenarios spanning competitive range. India quick commerce ARPU benchmarks adjusted for Pakistan purchasing power (3-4x lower): Zepto $250-360/year, Blinkit $360-440/year, Swiggy Instamart $280-400/year, compared to Pakistan $20-60 range accounting for GDP per capita differences. Recipe 1.2 customer interviews validate willingness-to-pay: 75% paying PKR 99-299 delivery fees, weekly grocery spend PKR 4,525 ($16), supporting $35 ARPU as realistic and defensible."
-    }
-  ],
-  "metadata": {
-    "tam": "$600M",
-    "sam": "$50M",
-    "market_growth_cagr": "45%",
-    "ltv_cac_ratio": 4.8,
-    "arpu_base": "$35",
-    "customers_for_100m": "2,857,143",
-    "market_share_required": "48-61%",
-    "data_sources_count": 8,
-    "data_variance": "56-67%",
-    "geographic_scope": "Pakistan (Karachi focus)",
-    "primary_kpis_passing": "3 of 5",
-    "key_risk": "Path to $100M ARR requires multi-city expansion beyond Karachi within 18-24 months; Karachi-only caps at ~$48M revenue",
-    "key_strength": "Strong unit economics (LTV/CAC 4.8x, 6.2mo payback) + exceptional growth (45% CAGR) validate business model sustainability despite TAM constraints",
-    "expansion_requirement": "Lahore + Islamabad expansion within 18-24 months adds $60-80M SAM, enabling path to $100M+ ARR with 15-20% market share",
-    "competitive_moat": "Real-time inventory accuracy (95%+ vs 70-80% competitors) + traffic-aware routing (Karachi-specific pain point) + kiryana integration",
-    "airlift_lesson": "Disciplined unit economics from day 1 (LTV/CAC >3x) vs growth-at-all-costs; Krave Mart near-profitability approach validates viable path"
-=======
-<<<<<<< HEAD
-      "evidence": "Base case ARPU of $90/year aligns exactly with competitor benchmark mean (0% variance). Benchmark range: $50 (DealCart discount) to $150 (Krave Mart premium), mean $90. Competitors analyzed: Foodpanda Pandamart ($60-80), Krave Mart ($100-150), DealCart ($50-80), GrocerApp ($60-100). Variance from benchmark: 0% → ALIGNED (within ±30% threshold). Assumptions are realistic and defensible based on competitive landscape."
+      "evidence": "Venture ARPU assumptions ($40/year base case) are realistic and aligned with benchmarks. Variance from comparable markets: -27.3% vs benchmark mean of $55 (average of Pakistan $30-50 estimate and India $60-80). Within ±30% threshold for ALIGNED classification. ARPU calculated from: AOV $10-15 × 3-5 orders/month × 12 months = $40/year. Slightly conservative relative to India benchmarks, appropriate given lower Pakistan GDP per capita ($1,485 vs India $2,700). Daraz all-category ARPU $18/year provides lower bound, India q-commerce $60-80 provides upper bound. Score: 85/100 (ALIGNED: within ±30%)."
     }
   ],
   "summary": {
     "total_kpis": 7,
-    "passed_kpis": 7,
-    "failed_kpis": 0,
-    "average_score": 80.0,
-    "critical_risks": [
-      "TAM of $311.8M is below ideal $1B threshold for Pakistan-only market; requires either acceptance of Pakistan-focused outcomes or regional expansion strategy",
-      "Path to $100M ARR requires 44.4% Pakistan-wide market share or multi-city expansion (Karachi + Lahore + Islamabad); challenging but precedented by Foodpanda's 40-50% share",
-      "CAC assumptions ($36) based on India quick commerce benchmarks with 2× adjustment for Pakistan; requires validation in MVP to confirm unit economics sustainability"
+    "passed_kpis": 4,
+    "failed_kpis": 3,
+    "primary_constraints": [
+      "TAM ($400M) below venture-scale minimum threshold ($500M)",
+      "Path to $100M ARR requires impossible 476% market share in Karachi alone",
+      "SAM ($50M) at borderline - insufficient headroom for venture-scale growth"
     ],
-    "key_strengths": [
-      "SAM of $130M (Karachi) is sufficient for venture-scale outcomes and exceeds $100M PASS threshold",
-      "Unit economics are healthy with 3.75 LTV/CAC ratio and 4.8-month payback period, supported by high shopping frequency (3-5×/week)",
-      "Market growing rapidly at 12.75% CAGR with strong secular tailwinds (urbanization, smartphone growth, digital payments)",
-      "Validated differentiation: 100% of interviewees cited inventory inaccuracy pain, 75% switching intent from competitors",
-      "High-quality data: 15 sources across 3 tiers with reconciled variance <20% for TAM, 17.3% for SAM",
-      "Competitive precedent exists: Foodpanda's 40-50% market share demonstrates concentrated market structure is achievable"
+    "positive_signals": [
+      "Healthy unit economics: LTV/CAC 4.47 indicates profitable, sustainable business model",
+      "Strong market growth: 18% CAGR provides tailwinds for expansion",
+      "Aligned assumptions: ARPU, CAC benchmarks are realistic and defensible",
+      "Validated market need: Customer interviews confirm real pain point"
     ],
-    "next_steps": [
-      "Launch MVP in Clifton/DHA/Gulshan (350K households) targeting 1% market share (2,200 customers) to validate unit economics",
-      "Validate traffic-aware routing differentiation: measure 30-45 min delivery vs. competitors' 2+ hours during 6-9 PM rush hour",
-      "Test subscription model (PKR 999/month) targeting 20-30% adoption to improve LTV and reduce churn",
-      "Build market share density (8-10% in launch neighborhoods) before geographic expansion to optimize unit economics",
-      "Develop multi-city expansion playbook (Year 2-3): Lahore ($60-90M market) and Islamabad ($30-45M market) targeting 15-25% share per city",
-      "Optimize CAC through referral program (PKR 200 credit) and kiryana store partnerships to reduce from $36 to $25-30 by Year 2"
+    "alternative_paths": [
+      "Option A: Strategic acquisition positioning - Build to $5-10M ARR in Karachi as acquisition target for Foodpanda/Delivery Hero/InDrive ($20-50M exit potential)",
+      "Option B: Venture-backed with pan-South Asia strategy - Reframe as regional play from day one, sequence expansion to Pakistan → Bangladesh → Sri Lanka → India (cumulative $700-850M TAM)",
+      "Option C: Bootstrap to profitability - Launch with $50-100K in 1-2 Karachi neighborhoods, achieve profitability at $500K-1M ARR, expand with operating cashflow"
     ]
-=======
-      "threshold": {
-        "go": 80,
-        "conditional": 60
-      },
-      "weight": 0.05,
-      "evidence": "Pakistan ARPU $120-180 vs. India $240-300 (40% lower). Variance -40% unadjusted, but ALIGNED when adjusted for Pakistan GDP ($1,500) vs. India ($2,500). CAC $15-30 vs. India $8-15 (aligned). Churn 35% (B2C benchmark).",
-      "unit": "%",
-      "score_raw": "-40% (GDP-adjusted: 0%)"
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
-    }
-  ],
-  "summary": {
-    "total": 7,
-<<<<<<< HEAD
-    "passed": 4,
-    "failed": 3,
-    "pass_rate": 57.14,
-    "weighted_score": 64.43
-=======
-    "passed": 3,
-    "failed": 4,
-    "pass_rate": 42.9,
-    "weighted_score": 70.3
->>>>>>> 168b1f246dbef3c3fdff10862f223d213419d427
->>>>>>> 987676b87fa753f73c3c2bc204a4ebf5ae48c8e5
->>>>>>> db8fb7933b00220ea84d9270af4da1204ece6966
+  },
+  "metadata": {
+    "tam_value_usd": 400000000,
+    "tam_low_usd": 270000000,
+    "tam_high_usd": 600000000,
+    "sam_value_usd": 50000000,
+    "sam_low_usd": 40000000,
+    "sam_high_usd": 60000000,
+    "arpu_base_usd": 40,
+    "arpu_low_usd": 30,
+    "arpu_high_usd": 50,
+    "ltv_base_usd": 67,
+    "cac_base_usd": 15,
+    "ltv_cac_ratio": 4.47,
+    "market_cagr_percent": 18,
+    "data_completeness_percent": 75,
+    "tam_variance_percent": 82.5,
+    "customers_needed_for_100m": 2500000,
+    "market_share_required_percent": 476,
+    "reachable_icp_households": 525000,
+    "realistic_arr_ceiling_usd": 10000000,
+    "geographic_scope": "Karachi, Pakistan (primary); Pakistan-wide or South Asia expansion required for venture-scale",
+    "execution_mode": "workflow",
+    "research_artifacts_used": [
+      "industry-data.md",
+      "competitor-data.md",
+      "icp-data.md",
+      "statement.md"
+    ]
   }
 }
