@@ -1,0 +1,68 @@
+{
+  "recipe_id": "1.3",
+  "generated_at": "2025-01-15T10:30:00Z",
+  "verdict": "CONDITIONAL",
+  "verdict_rationale": "3 of 4 primary KPIs pass thresholds. Pain intensity 7.2/10 (pass), workarounds 30% (fail), recency 70% (pass), trend 5+ consecutive MoM increases (pass). Strong pain signals and growing trend indicate opportunity, but low workaround rate requires deeper validation through customer interviews.",
+  "kpis": [
+    {
+      "id": "pain_intensity",
+      "name": "Pain Intensity",
+      "score": 72,
+      "passed": true,
+      "threshold": {
+        "go": 70,
+        "conditional": 60
+      },
+      "weight": 0.25,
+      "evidence": "Average 7.2/10 severity from 100 mentions across Reddit, TrustPilot, Facebook, and news sources. Top pain themes: delivery delays (32%), traffic/infrastructure (23%), missing items (18%), cost pressures (15%), time management (12%)",
+      "unit": "/10",
+      "score_raw": "7.2/10"
+    },
+    {
+      "id": "workarounds",
+      "name": "Active Workarounds",
+      "score": 30,
+      "passed": false,
+      "threshold": {
+        "go": 60,
+        "conditional": 40
+      },
+      "weight": 0.25,
+      "evidence": "30 of 100 mentions describe workarounds including ordering directly from restaurants, using traditional kiryana stores (90% of market), buying personal transport, checking traffic maps, and buying water tankers. Low rate suggests either opportunity (no good solutions exist) or risk (pain not action-worthy)",
+      "unit": "%"
+    },
+    {
+      "id": "recency",
+      "name": "Problem Recency",
+      "score": 70,
+      "passed": true,
+      "threshold": {
+        "go": 70,
+        "conditional": 50
+      },
+      "weight": 0.25,
+      "evidence": "70 of 100 mentions occurred in last 90 days (Oct 17, 2024 - Jan 15, 2025). Monthly trend shows acceleration: Aug 2024 (6) → Sep (8) → Oct (10) → Nov (12) → Dec (15) → Jan 2025 (38 mentions)",
+      "unit": "%"
+    },
+    {
+      "id": "trend_growth",
+      "name": "Trend Growth",
+      "score": 100,
+      "passed": true,
+      "threshold": {
+        "go": 60,
+        "conditional": 40
+      },
+      "weight": 0.25,
+      "evidence": "5+ consecutive months of MoM increases (Aug → Sep → Oct → Nov → Dec 2024). Growing trend driven by infrastructure deterioration, existing player failures (Foodpanda 1.1/5, Daraz 1.3/5), new market entrants (Krave Mart, Yango-DealCart), and economic pressures",
+      "unit": "MoM increases",
+      "score_raw": "5 consecutive months"
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "passed": 3,
+    "failed": 1,
+    "pass_rate": 75.0
+  }
+}
